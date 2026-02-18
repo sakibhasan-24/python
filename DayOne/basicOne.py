@@ -1,0 +1,1 @@
+print("restart a new journey to check a person's avility")
