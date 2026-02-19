@@ -18,3 +18,11 @@ print(type(age))
 print(type(isMale))
 print(type(height))
 print(type(weight))
+
+
+# input
+
+favouriteFood = input("Enter your food item : ")
+print("Your favourite food is : ",favouriteFood)
+print("Your favourite food is : " + favouriteFood)
+print("Your favourite food is : " + favouriteFood + " and your age is : " + str(age))
