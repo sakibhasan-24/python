@@ -28,3 +28,11 @@ print(thislist)
 
 mixed=[1,"ad",True]
 print(mixed)
+
+
+letters=list("python")
+print(letters)
+
+
+#slice
+print(thislist[2:5])
