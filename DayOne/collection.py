@@ -36,3 +36,12 @@ print(letters)
 
 #slice
 print(thislist[2:5])
+
+
+#2D list
+list2=[["a","b","c"],["d","e","f"],["g","h","i"]]
+# print(list2[0][1])
+# print(list2[1][2])
+for x in list2:
+    for y in x:
+        print(y)
