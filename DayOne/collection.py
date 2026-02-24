@@ -45,3 +45,16 @@ list2=[["a","b","c"],["d","e","f"],["g","h","i"]]
 for x in list2:
     for y in x:
         print(y)
+
+
+
+
+
+#num_pad
+
+num_pad=((1,2,3),(4,5,6),(7,8,9),("*",0,"#"))
+
+for row in num_pad:
+   for num in row:
+       print(num,end=" ")
+   print()
