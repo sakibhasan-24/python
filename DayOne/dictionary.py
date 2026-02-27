@@ -48,3 +48,12 @@ students = {
 
 # access data
 print(students["101"]["name"])
+
+# add new students
+students["103"] = {
+    "name": "Salma",
+    "age": 20,
+    "marks": {"math": 92, "english": 88, "cs": 95},
+    "attendance": 93
+}
+
