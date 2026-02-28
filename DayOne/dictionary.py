@@ -13,7 +13,7 @@ else:
 
 #update dictionary
 person.update({"job":"Engineer"})
-print(person)
+# print(person)
 
 #delete item from dictionary
 # del person["job"]
@@ -47,7 +47,7 @@ students = {
 
 
 # access data
-print(students["101"]["name"])
+# print(students["101"]["name"])
 
 # add new students
 students["103"] = {
@@ -57,3 +57,23 @@ students["103"] = {
     "attendance": 93
 }
 
+
+#update marks
+students["101"]["marks"]["math"] = 95
+
+#delete a student
+students.pop("102")
+
+# calculate average for each students
+
+for sid, info in students.items():
+#    print(sid,info)
+#    print()
+    total=sum(info["marks"].values())
+    # print(total)
+    # print()
+    average=total/len(info["marks"])
+    # print(f"{info['name']} : {average}")
+    # print 2 decimal format
+    print(f"{info['name']} : {average:.2f}")
+    print()
