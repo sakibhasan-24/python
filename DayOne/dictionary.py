@@ -85,4 +85,12 @@ for sid, info in students.items():
 topper=max(students,key=lambda sid:sum(students[sid]["marks"].values()))
 print(f"Topper : {students[topper]['name']}")
 
-# find who is more that 80%
+# find high attendance
+highAttendance={
+    sid:info
+    for sid,info in students.items()
+    if info["attendance"]>=90
+
+}
+
+print(highAttendance)
