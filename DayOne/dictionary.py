@@ -77,3 +77,12 @@ for sid, info in students.items():
     # print 2 decimal format
     print(f"{info['name']} : {average:.2f}")
     print()
+
+
+
+#find topper
+
+topper=max(students,key=lambda sid:sum(students[sid]["marks"].values()))
+print(f"Topper : {students[topper]['name']}")
+
+# find who is more that 80%
