@@ -41,3 +41,17 @@ create_emoji("O", "D")
 # here O and D is argument
 create_emoji("X", "X")
 # here X and X is argument
+
+
+# return statement
+
+
+def create_random_emoji(emoji):
+    if emoji =="":
+        return "😀"
+    else:
+        return emoji
+    
+print(create_random_emoji("😂"))
+
+
