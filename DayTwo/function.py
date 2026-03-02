@@ -93,3 +93,24 @@ def create_user(**kwargs):
 
 create_user(name="John", age=25)
 create_user(name="Jane", age=30, city="New York", country="USA", email="jane@gmail.com")
+
+
+
+
+# scope
+# it means where variable can be accessed or alive
+
+
+count =0
+
+print(f"initial value of count {count}")
+def increment():
+    global count
+    count=count+1
+    # so we make this count global or call function to access it 
+    print(f"inside function {count}")
+
+
+print(f"outside function {count} before call function")
+increment()
+print(f"outside function {count} after call function")
