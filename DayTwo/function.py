@@ -55,3 +55,10 @@ def create_random_emoji(emoji):
 print(create_random_emoji("😂"))
 
 
+# default argument
+
+def  power(num, power=2):
+    return num**power
+
+print(power(2,3))
+print(power(2))
