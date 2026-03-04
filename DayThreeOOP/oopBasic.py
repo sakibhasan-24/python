@@ -28,3 +28,9 @@ class Person:
 person1 = Person("sakib","sakib@gmail.com",30)
 print (person1.age)
 print(person1.greet())
+
+
+
+# class variable and instance variable
+# class variable is a variable that is shared by all instances of a class ,
+# instance variable is a variable that is unique to each instance of a class
