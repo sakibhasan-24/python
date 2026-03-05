@@ -20,3 +20,27 @@ def add(a,b):
 
 
 print(add(1,2))
+
+
+
+def security_check(func):
+    def wrapper(user_key):
+     
+        if user_key == "1234": 
+            print("✅ Access Granted! Guard is opening the door.")
+            return func(user_key)
+        else:
+            print("❌ Access Denied! Wrong Key. Calling Police... 🚔")
+    return wrapper
+
+
+@security_check
+def open_vault(key):
+    print("💰 Welcome! You are now inside the vault. Take the money!")
+
+
+print("--- Attempt 1: Wrong Key ---")
+open_vault("wrong_pass")
+
+print("\n--- Attempt 2: Correct Key ---")
+open_vault("1234")
