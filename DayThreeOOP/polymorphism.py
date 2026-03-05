@@ -33,3 +33,49 @@ animal_sound(cat)
 animal_sound(dog)
 
 
+# polymorphism with inheritance
+
+
+""" This is method overriding, a form of polymorphism. """
+class Animal:
+    def speak(self):
+        print("Animal makes a sound")
+
+
+class Dog(Animal):
+    def speak(self):
+        print("Dog barks")
+
+
+class Cat(Animal):
+    def speak(self):
+        print("Cat meows")
+
+dog = Dog()
+cat = Cat()
+
+dog.speak()
+cat.speak()
+
+
+# duck typing
+""" This is also a form of polymorphism. """
+# Object works if it has required method.
+
+class Bird:
+    def fly(self):
+        print("Flying")
+
+class Airplane:
+    def fly(self):
+        print("Airplane flying")
+    def move(self):
+        print("Moving")
+
+def start_flying(obj):
+    print(obj)
+    obj.fly()
+    obj.move()
+
+start_flying(Bird())
+start_flying(Airplane())
