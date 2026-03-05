@@ -5,6 +5,7 @@ class Shape:
     def __init__(self, color, isFilled):
         self.color = color
         self.isFilled = isFilled
+
 class Circle(Shape):
     def __init__(self,color,isFilled,radious):
         # self.color = color
