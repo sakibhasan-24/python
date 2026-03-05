@@ -17,3 +17,25 @@ class Animal:
     def sleep(self):
         print(f"{self.name} is sleeping")
 
+
+
+class Dog(Animal):
+    pass
+
+class Cat(Animal):
+    pass
+
+class Cow(Animal):
+    pass
+
+
+# create instance of child class
+
+dog=Dog("dog")
+cat=Cat("cat")
+cow=Cow("cow")
+
+# call methods
+dog.eat()
+dog.sleep()
+print(dog.name)
